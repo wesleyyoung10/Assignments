@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  font: 16px / 1 sans-serif;
+  text-align: center;
+}
+li {
+  display: inline;
+  float: left;
+  border-right: 1px solid #bbb;
+}
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  text-decoration: none;
+  color: #666;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.active {
+  background-color: #4CAF50;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+/* Add a gray right border to all list items, except the last item (last-child) */
+li:last-child {
+  border-right: none;
+}
+h1 {
+  text-align: center;
+  justify-content: center;
+}
+body {
+  background: #555;
+  text-align: center
+}
+#page-wrap {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+div img {
+  margin: 10px 10px;
+}
+#SearchBox {
+  float: right;
+  margin-top: 2px;
+  height: 20px
+}
