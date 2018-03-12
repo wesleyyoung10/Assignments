@@ -1,0 +1,108 @@
+html {
+  height: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font: 16px / 1 sans-serif;
+  background-color: #0e0e0e;
+}
+ 
+.centered {
+  position: fixed; /* or absolute */
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image1 {
+  position: relative;
+  top: 150px;
+  left: 650px;
+  width: 240px;
+}
+
+.image2 {
+  position: absolute;
+  top: 130px;
+  left: 930px;
+}
+
+.image3 {
+  position: absolute;
+  top: 475px;
+  left: 545px;
+  height: 125px;
+}
+
+.image4 {
+  position: absolute;
+  top: 475px;
+  left: 755px;
+  height: 125px;
+}
+
+.image5 {
+  position: absolute;
+  top: 475px;
+  left: 975px;
+  height: 125px;
+}
+
+.image6 {
+  position: absolute;
+  top: 475px;
+  left: 1190px;
+  height: 125px;
+}
+
+.image9 {
+  position: absolute;
+  top: 1500px;
+  left: 550px;
+  height: 125px;
+}
+
+body {
+  margin: 0px;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+.center-aligned {
+  display: box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
+  position: relative;
+  width: 900px;
+}
+
+.text {
+  position: absolute;
+}
+.background-image2 {
+  position: relative;
+  width: 900px;
+  bottom: 300px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -225px;
+}
+
+p {
+  color: white;
+  text-align:center;
+  position: relative;
+  top: -50px
+}
