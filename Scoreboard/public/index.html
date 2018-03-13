@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="./screen.css">
+</head>
+
+<body>
+  <ul>
+    <li>
+      <a href="default.asp">Home</a>
+    </li>
+    <li>
+      <a href="news.asp">News</a>
+    </li>
+    <li>
+      <a href="contact.asp">Contact</a>
+    </li>
+    <li>
+      <a href="about.asp">Games</a>
+    </li>
+  </ul>
+  <h1>My Score Board</h1>
+  <section class="BothTeams">
+    <section class="Team1">
+      <h2>Red Team</h2>
+    </section>
+    <section class="Team2">
+      <h2>Blue Team</h2>
+    </section>
+  </section>
+  <section class="add-number-box">
+    <section class="add-number-box1">
+      <form action="/action_page.php">
+        Update Red Team:
+        <input type="number" name="number">
+        <input type="button" value="update">
+      </form>
+    </section>
+
+    <section class="add-number-box2">
+      <form action="/action_page.php">
+        Update Blue Team:
+        <input type="number" name="number">
+        <input type="button" value="update">
+      </form>
+    </section>
+  </section>
+  <section id="Counters">
+    <div class="box1">
+      <input id="qty" value="0" />
+      <button id="down" onclick="modify_qty(-1)">Subtract 1</button>
+      <button id="up" onclick="modify_qty(1)">Add 1</button>
+    </div>
+    <div class="box2">
+      <input id="qty" value="0" />
+      <button id="down" onclick="modify_qty(-1)">Subtract 1</button>
+      <button id="up" onclick="modify_qty(1)">Add 1</button>
+    </div>
+  </section>
+  <script src="./main.js" charset="utf-8"></script>
+
+</body>
+
+</html>
