@@ -1,18 +1,24 @@
-const main = () => {
-  document.querySelector().textContent += '?'
-}
 
-function modify_qty(val) {
-  var qty = document.getElementById('qty').value;
-  var new_qty = parseInt(qty, 10) + val;
+angular.module("scoreBoardApp", [])
+  .controller("mainController", ($scope) => {
 
-  if (new_qty < 0) {
-    new_qty = 0;
-  }
+    $scope.scoreOne = 0;
+    $scope.scoreTwo = 0;
 
-  document.getElementById('qty').value = new_qty;
-  return new_qty;
-}
+    $scope.addScoreOne = () => {
+      $scope.scoreOne++;
+    };
 
-document.addEventListener('DOMContentLoaded', main)
+    $scope.subtractScoreOne = () => {
+      $scope.scoreOne--;
+    };
 
+    $scope.addScoreTwo = () => {
+      $scope.scoreTwo++;
+    };
+
+    $scope.subtractScoreTwo = () => {
+      $scope.scoreTwo--;
+    };
+
+  });

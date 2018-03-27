@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./screen.css">
 </head>
 
-<body>
+<body ng-app="scoreBoardApp" ng-controller="mainController">
   <ul>
     <li>
       <a href="default.asp">Home</a>
@@ -24,45 +24,46 @@
     </li>
   </ul>
   <h1>My Score Board</h1>
-  <section class="BothTeams">
-    <section class="Team1">
-      <h2>Red Team</h2>
-    </section>
-    <section class="Team2">
-      <h2>Blue Team</h2>
-    </section>
-  </section>
-  <section class="add-number-box">
-    <section class="add-number-box1">
-      <form action="/action_page.php">
-        Update Red Team:
-        <input type="number" name="number">
-        <input type="button" value="update">
-      </form>
-    </section>
 
-    <section class="add-number-box2">
-      <form action="/action_page.php">
-        Update Blue Team:
-        <input type="number" name="number">
-        <input type="button" value="update">
-      </form>
-    </section>
-  </section>
-  <section id="Counters">
-    <div class="box1">
-      <input id="qty" value="0" />
-      <button id="down" onclick="modify_qty(-1)">Subtract 1</button>
-      <button id="up" onclick="modify_qty(1)">Add 1</button>
+  <div class="scoreboard">
+    <div class="team">
+      <div class="title">
+        <h2>Red Team</h2>
+      </div>
+      <div class="score">
+
+        {{ scoreOne }}
+
+      </div>
+      <div class="buttons">
+        <div>
+          <button ng-click="addScoreOne()">Add 1</button>
+          <button ng-click="subtractScoreOne()">Subtract 1</button>
+        </div>
+      </div>
     </div>
-    <div class="box2">
-      <input id="qty" value="0" />
-      <button id="down" onclick="modify_qty(-1)">Subtract 1</button>
-      <button id="up" onclick="modify_qty(1)">Add 1</button>
+    <div class="team">
+      <div class="title">
+        <h2>Blue Team</h2>
+      </div>
+      <div class="score">
+
+        {{ scoreTwo }}
+
+      </div>
+      <div class="buttons">
+        <div>
+          <button ng-click="addScoreTwo()">Add 1</button>
+          <button ng-click="subtractScoreTwo()">Subtract 1</button>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="./main.js" charset="utf-8"></script>
-
 </body>
 
 </html>
